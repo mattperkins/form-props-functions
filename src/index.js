@@ -2,6 +2,7 @@ import * as React from 'react'
 import ReactDOM from 'react-dom'
 import registerServiceWorker from './registerServiceWorker'
 import styled, {injectGlobal} from 'styled-components'
+import App from './App'
 
 //eslint-disable-next-line
 injectGlobal`
@@ -18,7 +19,7 @@ margin: 100px;
 
 
 // main ("ROOT") component 
-export default class Root extends React.Component {
+class Root extends React.Component {
 
 
 // MAIN COMPONENT RENDER
@@ -29,7 +30,7 @@ return (
 
 <Wrapper>
 
-  <h1>Hello, World!</h1>
+<App />
 
 </Wrapper>
 
