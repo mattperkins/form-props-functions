@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export default class AddUsers2 extends React.Component{
+export default class AddUsers extends React.Component{
  
     state={
         name: null,
@@ -15,7 +15,7 @@ export default class AddUsers2 extends React.Component{
     }
     handleSubmit = (e) => {
         e.preventDefault()
-        this.props.addLemon(this.state)
+        this.props.addUser(this.state)
     }
     render() {
     return (
