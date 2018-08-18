@@ -1,12 +1,18 @@
 import * as React from 'react'
 
-export default ({users}) => (
-    users.map((users, id) => {
-       return <div key={id}>
+export default ({users, deleteUser}) => (
+    users.map(users => {
+     if(users.age >= 16) { 
+       return <div key={users.id}>
+         <p onClick={ () => deleteUser(users.id) }>
             <span>{users.name}</span> 
             <span>{users.age}</span> 
             <span>{users.city}</span>
-        </div>
+          </p>
+        </div> 
+        } else {
+         return null
+        }
     })
 )
  
