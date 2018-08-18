@@ -3,9 +3,9 @@ import * as React from 'react'
 export default ({users}) => (
     users.map((users, id) => {
        return <div key={id}>
-            <p>{users.name}</p> 
-            <p>{users.age}</p> 
-            <p>{users.city}</p> 
+            <span>{users.name}</span> 
+            <span>{users.age}</span> 
+            <span>{users.city}</span>
         </div>
     })
 )

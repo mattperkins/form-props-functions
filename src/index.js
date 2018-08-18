@@ -8,13 +8,24 @@ import App from './App'
 injectGlobal`
 body {
 font-family: sans-serif;
+font-size: 24px;
 background: #f7f7f7;
+}
+form{
+  margin: 10px;
+}
+input{
+  margin: 10px;
+  display: block;
+}
+span{
+  padding: 10px;
 }
 `
 
 // styled components
 const Wrapper = styled.div`
-margin: 100px;
+margin: 10px;
 `
 
 

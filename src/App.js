@@ -21,8 +21,8 @@ export default class App extends React.Component{
   render(){
    return(
     <div>
-       <Users users={this.state.users}/>
        <AddUser addUser={this.addUser} />
+       <Users users={this.state.users}/>
      </div>
    )
   }
