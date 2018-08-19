@@ -12,7 +12,7 @@ export default class App extends React.Component{
    }
 
   addUser = (user) => {
-    user.id = Math.random()
+    user.id = Math.random().toString(36).substr(2,16)
     let users = [...this.state.users, user]
     this.setState({
         users: users 
